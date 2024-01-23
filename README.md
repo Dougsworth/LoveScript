@@ -1,4 +1,4 @@
-# Love Script README 💌
+# LoveScript💌
 
 ## Overview 🌟
 Love Script is a web app designed to make writing heartfelt love letters easy and fun, just in time for Valentine's Day! 💕
