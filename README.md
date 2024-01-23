@@ -11,8 +11,8 @@ Love Script is a web app designed to make writing heartfelt love letters easy an
 
 ## Tech Stack 🛠️
 - **Frontend:** `React.js`
-- **Backend:** `Node.js` with `Express.js`
-- **Database:** `MongoDB`
+- **Backend:** `mcv dotnet`
+- **Database:** `dotnet`
 - **Security:** `OAuth` for safe access.
 
 ## Getting Started 🚀
