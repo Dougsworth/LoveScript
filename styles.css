@@ -1,52 +1,54 @@
+html,
 body {
-  padding: 0;
+  height: 100%;
+  width: 100%;
   margin: 0;
+  padding: 0;
+}
+
+.container {
   display: flex;
-  flex-direction: column;
+  height: 100%;
+  width: 100%;
   align-items: center;
-  background-color: #fff5f8; /* Soft pink background */
-  font-family: "Dancing Script", cursive; /* Elegant font */
-  background-size: cover;
-  background-position: center;
+  justify-content: center;
+  animation: 1.5s ease 0s infinite pulse;
 }
 
-#slogan {
-  text-align: center;
-  font-size: 32px;
-  margin: 20px 0;
-  color: #e63946; /* Romantic color for the slogan */
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  max-height: 400px;
 }
 
-#pen-animation img {
-  height: 100px;
-  display: block;
-  margin: 0 auto;
+#wordcloud {
+  width: 50%; /* Adjust as needed */
+  height: auto;
+  animation: 1.5s ease 0s infinite beat;
 }
 
-#template-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  padding: 20px;
-  margin-top: 20px;
+@keyframes beat {
+  0%,
+  50%,
+  100% {
+    transform: scale(1, 1);
+  }
+  30%,
+  80% {
+    transform: scale(0.92, 0.95);
+  }
 }
 
-.template {
-  border: 2px solid #ff99aa;
-  padding: 20px;
-  cursor: pointer;
-  transition: transform 0.3s ease;
-  border-radius: 10px;
-  background-color: #ffffff;
-  text-align: center;
-}
-
-.template:hover {
-  transform: scale(1.1);
-  background-color: #ffeff1;
-}
-
-.heart {
-  margin-right: 10px;
-  color: #e63946;
+@keyframes pulse {
+  0%,
+  50%,
+  100% {
+    background: #fee;
+  }
+  30%,
+  80% {
+    background: #fff;
+  }
 }
